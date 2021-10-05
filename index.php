@@ -9,6 +9,6 @@
         <title>HomeAid</title>
     </head>
     <body>
-        <h1> HELLO STEEVEN </h1>
+        <h1> BYE STEEVEN </h1>
     </body>
 </html>
