@@ -1,0 +1,32 @@
+git commands:
+    git push                        | push your changes to repository 
+    git pull                        | "grab" changes from the repository 
+    git status                      | checks for changes on your code copy 
+    git add .                       | used to register new folders/files as changes to the repository
+    git commit -m "message"         | type first before push, used as something like "save with comments"
+    git reset --hard                | resets the repository into the previous state
+    git clone [link] .              | clones a repository into the current directory
+    git config user.email [email]   | used to set user's email before being able to do a commit
+    git config user.name [name]     | used to set user's name before being able to do a commit
+
+git command sequences:
+    starting:
+        git clone
+        git pull
+
+    updating the repository:
+        git add .
+        git commit -m "message"
+        git push
+        
+    changing into a previous version:
+        git log
+        git checkout [version id]
+
+    
+other commands:
+    ls      | lists all files in the current directory
+    mkdir   | makes a new folder in the current directory
+    cd      | changes directory
+    cd ..   | returns to the previous directory
+    
