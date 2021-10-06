@@ -15,8 +15,8 @@
             </div>
             <div class="rdrct-btns">
                 <button class="unv-btns"><a href="index.php">Home</a></button>
-                <button class="unv-btns">Categories</button>
-                <button class="unv-btns">About</button>
+                <button class="unv-btns"><a href="pages/categories.php">Categories</a></button>
+                <button class="unv-btns"><a href="pages/about.php">About</a></button>
             </div>
             <div class="acc-reg">
                 <button class="sign-up unv-btns">Sign Up</button>
