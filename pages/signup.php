@@ -1,5 +1,25 @@
 <?php
     require("../configuration/localhost.php");
+
+    if(isset($_POST['registerBtn'])){
+        $name = $_POST['fname'] . " " . $_POST['lname'];
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $pass = $_POST['password'];
+        $address = $_POST['address'];
+        if($email != $_POST['emailcheck']){
+            echo "<script>alert('Please double check your email.')</script>";
+        }
+        if($pass = $_POST['passcheck']){
+            $password = hash("sha256", $pass);
+        }
+        else{
+            echo "<script>alert('Please double check your password.')</script>";
+        }
+        $sql = "INSERT INTO `users`(`name`, `username`, `email`, `password`, `address`) VALUES
+            ('$name', '$username', '$email', '$password', '$address');";
+        $result = $conn->query($sql);
+    }
 ?>
 
 <html>
@@ -18,7 +38,6 @@
                 <button class="unv-btns"><a href="about.php">About</a></button>
             </div>
             <div class="acc-reg">
-                <button class="sign-up unv-btns">Sign Up</button>
                 <button class="log-in unv-btns">Log In</button>
             </div>
         </div>
