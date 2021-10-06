@@ -38,6 +38,7 @@
                 <button class="unv-btns"><a href="about.php">About</a></button>
             </div>
             <div class="acc-reg">
+                <button class="button:disabled"disabled>Sign Up</button>
                 <button class="log-in unv-btns">Log In</button>
             </div>
         </div>

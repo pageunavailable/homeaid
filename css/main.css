@@ -40,6 +40,19 @@ body{
     color: #F8F9FA;
     cursor: pointer;
 }
+
+button:disabled,
+button[disabled]{
+    height: 100%;
+    width: 150px;
+    border:none;
+    background: none;
+    font-family: "Century Gothic";
+    font-size: 18;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 0;
+}
 .acc-reg{
     float:right;
 }
