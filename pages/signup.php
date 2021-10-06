@@ -26,7 +26,7 @@
 <html>
     <head>
         <title>Registration | HomeAid</title>
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/signup.css">
     </head>
     <body>
         <div class="nav-bar">
@@ -44,7 +44,33 @@
             </div>
         </div>
         <div class="main-body">
-            
+            <form method="POST" action="" class="signup-form">
+                <div class="two-cols">
+                    <div class="col1">
+                        <label>First Name</label>
+                        <input name="fname" type="text" placeholder="First Name">
+                    </div>
+                    <div class="col2">
+                        <label>Last Name</label>
+                        <input name="lname" type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="youremail@domain.com">
+                <label>Confirm Email Address</label>
+                <input type="email" name="emailcheck" placeholder="youremail@domain.com">
+                <div class="two-cols">
+                    <div class="col1">
+                        <label>Create Password</label>
+                        <input type="password" name="password"  autocomplete="new-password" placeholder="Password">
+                    </div>
+
+                    <div class="col2">
+                        <label>Confirm Password</label>
+                        <input type="password" name="passcheck" autocomplete="new-password" placeholder="Confirm Password">
+                    </div>
+                </div>
+            </form>
         </div>
     </body>
     <footer>
