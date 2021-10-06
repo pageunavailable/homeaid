@@ -1,6 +1,6 @@
 <?php
     require("configuration/localhost.php");   
-
+    session_start();
 ?>
 
 <html>
