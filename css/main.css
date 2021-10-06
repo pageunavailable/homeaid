@@ -40,9 +40,7 @@ body{
     color: #F8F9FA;
     cursor: pointer;
 }
-
-button:disabled,
-button[disabled]{
+button:disabled, button[disabled]{
     height: 100%;
     width: 150px;
     border:none;
