@@ -26,8 +26,9 @@
     }
 
     .logo{
-        padding-top: 10px;
-        padding-left: 15px;
+        padding-top: 8px;
+        padding-left: 10px;
+        margin-right: 10px;
     }
     #logo-img{
         max-width: 130px;
@@ -42,13 +43,12 @@
         font-size: 18;
         padding-left: 2px;
         padding-right: 2px;
-        margin-right: 10px;
-        margin-left: 10px;
-        border-radius: none;
+        border-radius: 0;
     }
     .unv-btns:hover{
         background-color:#248277;
         color: #F8F9FA;
+        cursor: pointer;
     }
     .acc-reg{
         float:right;
@@ -62,7 +62,23 @@
         font-size: 26;
         width: 700px;
         background-color: #F8F9FA;
+        border: 1px solid #E9ECEF;
+        border-radius: 5px 0px 0px 5px;
     }
+    .srch-btn{
+        font-size: 24;
+        margin-left: -6px;
+        border: none;
+        height: 35;
+        border-radius: 0px 5px 5px 0px;
+        background-color: #99E2B4;
+        color: white;
+    }
+    .srch-btn:hover{
+        cursor: pointer;
+    }
+    input[type=text]:focus {outline:none;
+    border: 1px solid #303A40}
 </style>
 <html>
     <head>
@@ -86,8 +102,8 @@
         <div class="main-body">
             <div class="srch-bar">
                 <form method="GET">
-                    <input class="srch-txt" type="text">
-                    <input class="srch-btn" type="button" value="Search">
+                    <input class="srch-txt" type="text" placeholder="Find Your Service">
+                    <input class="srch-btn" type="submit" value="Search">
                 </form>
             </div>
         </div>
