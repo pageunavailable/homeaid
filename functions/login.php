@@ -1,6 +1,4 @@
 <?php
-    require("../configuration/localhost.php");
-
     if(isset($_POST['loginBtn'])){
         $username = $_POST['username'];
         $pass = $_POST['password'];

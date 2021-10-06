@@ -1,5 +1,6 @@
 <?php
-    require("configuration/localhost.php");   
+    require("configuration/localhost.php");
+    require("functions/login.php");
     session_start();
 ?>
 

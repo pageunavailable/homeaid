@@ -1,5 +1,6 @@
 <?php
     require("../configuration/localhost.php");
+    require("../functions/login.php");
 
     if(isset($_POST['registerBtn'])){
         $name = $_POST['fname'] . " " . $_POST['lname'];
