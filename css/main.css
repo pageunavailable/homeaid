@@ -86,3 +86,15 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.center{
+    text-align: center;
+}
+footer{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    background-color: #E0FBFC;
+    height: 5%;
+    font-size: 11;
+}

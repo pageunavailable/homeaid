@@ -6,10 +6,11 @@
         $sql = "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password';";
         $result = $conn->query($sql);
         if($result->num_rows != 0){
-            
+            //$_SESSION['username'] = $username;
+            //echo "<script>console.log($_SESSION['username']);</script>";
         }
         else{
-            echo "<script>alert('Incorrect username or password. Please check your credentials and try again.')</script>";
+            echo "<script>alert('Incorrect username or password. Please check your credentials and try again.');</script>";
         }
     }
 ?>

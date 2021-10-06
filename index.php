@@ -2,6 +2,7 @@
     require("configuration/localhost.php");
     require("functions/login.php");
     session_start();
+    //$_SESSION['username'] = "";
 ?>
 
 <html>
@@ -33,4 +34,7 @@
             </div>
         </div>
     </body>
+    <footer>
+        <p>© October 2021 - The Mischiefs</p>
+    </footer>
 </html>

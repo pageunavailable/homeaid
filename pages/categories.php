@@ -23,5 +23,11 @@
                 <button class="log-in unv-btns">Log In</button>
             </div>
         </div>
+        <div class="main-body">
+            
+        </div>
     </body>
+    <footer>
+        <p>© October 2021 - The Mischiefs</p>
+    </footer>
 </html>
