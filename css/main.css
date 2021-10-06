@@ -71,3 +71,7 @@ input[type=text]:focus{
     outline:none;
     border: 1px solid #303A40
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
