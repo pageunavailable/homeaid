@@ -1,7 +1,7 @@
 <?php
     require("configuration/localhost.php");
     require("functions/login.php");
-    session_start();
+    //session_start();
     //$_SESSION['username'] = "";
 ?>
 

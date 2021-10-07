@@ -4,10 +4,9 @@
 
     if(isset($_POST['registerBtn'])){
         $name = $_POST['fname'] . " " . $_POST['lname'];
-        $username = $_POST['username'];
+        //$username = $_POST['username']; TO BE INSERTED
         $email = $_POST['email'];
         $pass = $_POST['password'];
-        $address = $_POST['address'];
         if($email != $_POST['emailcheck']){
             echo "<script>alert('Please double check your email.')</script>";
         }
@@ -17,8 +16,8 @@
         else{
             echo "<script>alert('Please double check your password.')</script>";
         }
-        $sql = "INSERT INTO `users`(`name`, `username`, `email`, `password`, `address`) VALUES
-            ('$name', '$username', '$email', '$password', '$address');";
+        $sql = "INSERT INTO `users`(`name`, `email`, `password`) VALUES
+            ('$name', '$email', '$password');";
         $result = $conn->query($sql);
     }
 ?>
@@ -70,6 +69,7 @@
                         <input type="password" name="passcheck" autocomplete="new-password" placeholder="Confirm Password">
                     </div>
                 </div>
+                <button type="submit" name="registerBtn">Register</button>
             </form>
         </div>
     </body>
