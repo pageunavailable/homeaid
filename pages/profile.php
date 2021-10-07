@@ -19,7 +19,7 @@
                 <a href="about.php"><button class="unv-btns">About</button></a>
             </div>
             <div class="acc-reg">
-                <a href="signup.php"><button class="sign-up unv-btns">Sign Up</button></a>
+                <a href="signup.php"><button class="sign-up unv-btns">Sign Up</button></a><!--BUILD LOGOUT BUTTON-->
                 <button class="log-in unv-btns">Log In</button>
             </div>
         </div>
