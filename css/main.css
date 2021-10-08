@@ -110,6 +110,27 @@ label{
     line-height: 0 !important;
 }*/
 .card-deck{
-   margin-top:50px;
-
+   margin-top: 70px;
+   position: absolute;
+}
+#popular-categories{
+    position: absolute;
+    margin-left: 70px;
+}
+#popular-categories p{
+    font-size: 20;
+}
+#popular-categories button{
+    border-radius: 12px;
+    font-size: 12;
+    box-shadow: 0 1px 1px 0;
+    border: none;
+    padding: 2px 10px 2px 10px;
+}
+#popular-categories button:hover{
+    background-color: lightgray;
+}
+.cardimage{
+    height: 20px;
+    width: 40px;
 }

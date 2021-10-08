@@ -55,6 +55,13 @@
                     <input class="srch-txt" type="text" placeholder="Find Your Service">
                     <input class="srch-btn" type="submit" value="Search">
                 </form>
+                <div id="popular-categories">
+                    <p>Popular Categories:
+                        <button type="button">Carpentry</button>
+                        <button type="button">Housekeeping</button>
+                        <button type="button">Plumbing</button>
+                    </p>
+                </div>
             </div>
         </div>
     </body>
