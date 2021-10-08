@@ -1,6 +1,10 @@
 <?php
     require("../configuration/localhost.php");
-    require("../functions/login.php");
+    if(isset($_POST['logoutBtn'])){
+        session_unset();
+        session_destroy();
+        header("Location: ../index.php");
+    }
 ?>
 
 <html>
@@ -19,8 +23,9 @@
                 <a href="about.php"><button class="unv-btns">About</button></a>
             </div>
             <div class="acc-reg">
-                <a href="signup.php"><button class="sign-up unv-btns">Sign Up</button></a><!--BUILD LOGOUT BUTTON-->
-                <button class="log-in unv-btns">Log In</button>
+                <form method="POST">
+                    <button type="submit" class="unv-btns" name="logoutBtn">Logout</button>
+                </form>
             </div>
         </div>
         <div class="main-body">
