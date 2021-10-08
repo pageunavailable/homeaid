@@ -7,7 +7,6 @@
         $result = $conn->query($sql);
         if($result->num_rows != 0){
             $_SESSION['username'] = $username;
-            echo "<script>console.log('{$_SESSION['username']}')</script>";
             echo "<script>console.log('Login success');</script>";
             header("Location: pages/profile.php");
         }
