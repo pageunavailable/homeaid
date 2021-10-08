@@ -36,10 +36,10 @@
                     <form method="POST" action="">
                         <div class="modal-body">
                             <label>Username</label>
-                            <input type="text" name="username" placeholder="Username">
+                            <input type="text" name="username" autocomplete="username" placeholder="Username">
                             <br>
                             <label>Password</label>
-                            <input type="password" name="password" placeholder="Password">
+                            <input type="password" name="password" autocomplete="current-password" placeholder="Password">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
