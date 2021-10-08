@@ -4,21 +4,30 @@
 
     if(isset($_POST['registerBtn'])){
         $name = $_POST['fname'] . " " . $_POST['lname'];
-        //$username = $_POST['username']; TO BE INSERTED
+        $username = $_POST['username'];
         $email = $_POST['email'];
         $pass = $_POST['password'];
-        if($email != $_POST['emailcheck']){
-            echo "<script>alert('Please double check your email.')</script>";
+        $sql = "SELECT * FROM `users` WHERE `email` = '$email';";
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
+            echo "<script>alert('This email is already in use.');</script>";
         }
-        if($pass = $_POST['passcheck']){
+        $sql = "SELECT * FROM `users` WHERE `username` = '$username'";
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
+            echo "<script>alert('This username is already in use. Please use a different username.');</script>";
+        }
+        if($pass == $_POST['passcheck']){
             $password = hash("sha256", $pass);
         }
         else{
             echo "<script>alert('Please double check your password.')</script>";
         }
-        $sql = "INSERT INTO `users`(`name`, `email`, `password`) VALUES
-            ('$name', '$email', '$password');";
+        $sql = "INSERT INTO `users`(`name`, `email`, `username`, `password`) VALUES 
+        ('$name', '$email', '$username', '$password');";
         $result = $conn->query($sql);
+        $_SESSION['username'] = $username;
+        header("Location: profile.php");
     }
 ?>
 
@@ -56,8 +65,8 @@
                 </div>
                 <label>Email Address</label>
                 <input type="email" name="email" placeholder="youremail@domain.com">
-                <label>Confirm Email Address</label>
-                <input type="email" name="emailcheck" placeholder="youremail@domain.com">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Username">
                 <div class="two-cols">
                     <div class="col1">
                         <label>Create Password</label>
