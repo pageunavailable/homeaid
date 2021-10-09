@@ -1,0 +1,42 @@
+.signup-form{
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    background-color: #F8F9FA;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.signup-form input{
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+}
+.signup-form .name{
+    width: 44%;
+}
+.two-cols{
+    text-align: left;
+}
+.two-cols .col1, .two-cols .col2 {
+    width: 49%;
+}
+.two-cols .col1 {
+    float: left;
+}
+.two-cols .col2 {
+    float: right;
+}
+.two-cols label {
+    display: block;
+}
+.signup-form button{
+    border: none;
+    float: right;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-size: 20;
+    text-align: center;
+}
+.signup-form button:hover{
+    background-color: rgb(106, 233, 106);
+}
