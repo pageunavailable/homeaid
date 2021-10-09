@@ -29,3 +29,14 @@
 .two-cols label {
     display: block;
 }
+.signup-form button{
+    border: none;
+    float: right;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-size: 20;
+    text-align: center;
+}
+.signup-form button:hover{
+    background-color: rgb(106, 233, 106);
+}
