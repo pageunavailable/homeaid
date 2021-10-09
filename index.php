@@ -72,6 +72,7 @@
                     <input class="srch-btn" type="submit" value="Search">
                 </form>
             </div>
+            
             <div id="popular-categories">
                 <p><strong>Popular Categories:
                     <button type="button"><strong>Carpentry</strong></button>
