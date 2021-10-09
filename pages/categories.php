@@ -1,6 +1,7 @@
 <?php
     require("../configuration/localhost.php");
     require("../functions/login.php");
+    require("../configuration/local_config.php");
 ?>
 
 <html>
@@ -66,42 +67,8 @@
         </div>
 
         <div class="main-body">
-            <div class="card-group">
-                <div class="card center" style="width: 18rem;">
-                    <img src='../images/category_images/carpentry.jpg' class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-tertiary">Go</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Users Available: 
-                    </div>
-                </div>
-
-                <div class="card center" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-tertiary">Go</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Users Available:    
-                    </div>
-                </div>
-
-                <div class="card center" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-tertiary">Go</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Users Available:    
-                    </div>
-                </div>
+            <div class="card-group" id="card-body">
+                
             </div>
         </div>
     </body>
@@ -109,4 +76,36 @@
     <footer>
         <p>© October 2021 - The Mischiefs</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </html>
+
+<script>
+    var jq = $.noConflict();
+    Load();
+    function Load(){
+        jq('#card-body').empty();
+        jq.ajax({
+            url: "http://localhost/myapp/json_tester/functions/list.php",
+            type: "GET",
+            success: function(response){
+                response.forEach(function(categories, index){
+                    jq('#card-body').append(`
+                        <div class="card center" style="width: 18rem;">
+                            <div class="cardimage">
+                                <img src='${categories.image}' class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">${categories.category_name}</h5>
+                                <p class="card-text">${categories.description}</p>
+                                <a href="#" class="btn btn-tertiary">Go</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Users Available: 
+                            </div>
+                        </div>
+                    `);
+                });
+            }
+        });
+    }
+</script>
