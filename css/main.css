@@ -95,3 +95,11 @@ footer p{
     background-color: #6C757D !important;
     color: white !important;
 }
+.btn-group img{
+    border-radius: 50%;
+    width: 40px;
+}
+.btn-group a{
+    text-decoration: none;
+    color: inherit;
+}

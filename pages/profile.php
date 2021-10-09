@@ -34,13 +34,16 @@
                             <a class="nav-link active" href="about.php">About</a>
                         </li>
                     </ul>
-                    <span class="navbar-text logout">
-                        <div class="acc-reg">
-                            <form method="POST">
-                                <button name="logoutBtn">Logout</button>
-                            </form>
-                        </div>
-                    </span>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../images/profile_pics/stockimg.jpg"></image>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button"><a href="profile.php">Profile</a></button></li>
+                            <li><button class="dropdown-item" type="button">Settings</button></li>
+                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

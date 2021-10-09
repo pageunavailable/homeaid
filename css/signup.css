@@ -15,7 +15,6 @@
     width: 44%;
 }
 .two-cols{
-    overflow: hidden;
     text-align: left;
 }
 .two-cols .col1, .two-cols .col2 {
