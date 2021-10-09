@@ -7,75 +7,105 @@
     <head>
         <title>Categories | HomeAid</title>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     </head>
+
     <body>
-        <div class="nav-bar">
-            <div class="logo">
-                <a href="../index.php"><img id="logo-img"src="../images/homeaidlogo-green.png"></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.php"><img id="logo-img" src="../images/homeaidlogo-green.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="categories.php">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.php">About</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="acc-reg">
+                            <a href="signup.php"><button name="signupBtn">Sign Up</button></a>
+                            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Log In
+                            </button>
+                        </div>
+                    </span>
+                </div>
             </div>
-            <div class="rdrct-btns">
-                <a href="../index.php"><button class="unv-btns">Home</button></a>
-                <a href="categories.php"><button class="unv-btns">Categories</button></a>
-                <a href="about.php"><button class="unv-btns">About</button></a>
-            </div>
-            <div class="acc-reg">
-                <a href="signup.php"><button class="sign-up unv-btns">Sign Up</button></a>
-                <button class="log-in unv-btns">Log In</button>
+        </nav>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In to your HomeAid Account</h5>
+                    </div>
+                    <form method="POST">
+                        <div class="modal-body">
+                            <label>Username</label>
+                            <input type="text" name="username" autocomplete="username" placeholder="Username">
+                            <br>
+                            <label>Password</label>
+                            <input type="password" name="password" autocomplete="current-password" placeholder="Password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" name="subloginBtn">Login</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+
         <div class="main-body">
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top cardimage" src="..." alt="Card image cap">
+            <div class="card-group">
+                <div class="card center" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-tertiary">Go</a>
                     </div>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                    <small class="text-muted">Ratings</small>
+                    <div class="card-footer text-muted">
+                        Users Available:    
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top cardimage" src="..." alt="Card image cap">
+
+                <div class="card center" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-tertiary">Go</a>
                     </div>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <div class="card-footer text-muted">
+                        Users Available:    
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top cardimage" src="..." alt="Card image cap">
+
+                <div class="card center" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-tertiary">Go</a>
                     </div>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <div class="card-footer text-muted">
+                        Users Available:    
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top cardimage" src="..." alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
             </div>
         </div>
     </body>
+
     <footer>
         <p>© October 2021 - The Mischiefs</p>
     </footer>

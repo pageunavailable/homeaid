@@ -1,82 +1,8 @@
-body{
-    margin: 0;
-}
-.nav-bar{
-    width: 100%;
-    height: 60px;
-    background-color: #F8F9FA;
-    position:fixed;
-}
-.main-body{
-    background-color: #469D89;
-    width: 100%;
-    height: calc(100% - 60px);
-    position: relative;
-    top: 60px;
-}
-.logo, .rdrct-btns{
-    float: left;
-}
-.logo{
-    padding-top: 8px;
-    padding-left: 10px;
-    margin-right: 10px;
-}
-#logo-img{
-    max-width: 130px;
-    height: auto;
-}
-.unv-btns{
-    height: 100%;
-    width: 150px;
-    border:none;
-    background: none;
-    font-family: "Century Gothic";
-    font-size: 18;
-    padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 0;
-}
-.unv-btns:hover{
-    background-color:#248277;
-    color: #F8F9FA;
-    cursor: pointer;
-}
-button:disabled, button[disabled]{
-    height: 100%;
-    width: 150px;
-    border:none;
-    background: none;
-    font-family: "Century Gothic";
-    font-size: 18;
-    padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 0;
-}
-.acc-reg{
-    float:right;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-.center{
-    text-align: center;
-}
-footer{
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    background-color: #E0FBFC;
-    height: 5%;
-    font-size: 11;
-}
 .signup-form{
     position: absolute;
     padding: 20px 20px 20px 20px;
     text-align: left;
-    background-color: #56AB91;
+    background-color: #F8F9FA;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -86,7 +12,7 @@ footer{
     margin: 5px 5px 5px 5px;
 }
 .signup-form .name{
-    width: 45%;
+    width: 44%;
 }
 .two-cols{
     overflow: hidden;
