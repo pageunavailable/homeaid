@@ -1,6 +1,7 @@
 <?php
     require("../configuration/localhost.php");
     require("../functions/login.php");
+    require("../functions/srch.php");
 ?>
 
 <html>
@@ -68,8 +69,8 @@
         <div class="main-body">
             <div class="srch-bar-active">
                 <form method="GET">
-                    <input class="srch-txt" type="text" placeholder="Find people or categories">
-                    <input class="srch-btn" type="submit" value="Search">
+                    <input class="srch-txt" type="text" placeholder="Find people or categories" id="search-bar">
+                    <button class="srch-btn" type="submit" name="searchBtn">Search</button>
                 </form>
             </div>
         </div>

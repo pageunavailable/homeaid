@@ -1,10 +1,5 @@
 <?php
     require("../configuration/localhost.php");
-    if(isset($_POST['logoutBtn'])){
-        session_unset();
-        session_destroy();
-        header("Location: ../index.php");
-    }
 ?>
 
 <html>
@@ -36,12 +31,12 @@
                     </ul>
                     <div class="btn-group">
                         <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../images/profile_pics/stockimg.jpg"></image>
+                            <img src="<?=$image?>"></image>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><button class="dropdown-item" type="button"><a href="profile.php">Profile</a></button></li>
                             <li><button class="dropdown-item" type="button">Settings</button></li>
-                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                            <li><button class="dropdown-item" type="button" onclick="logout()">Logout</button></li>
                         </ul>
                     </div>
                 </div>
@@ -57,3 +52,9 @@
         <p>© October 2021 - The Mischiefs</p>
     </footer>
 </html>
+
+<script>
+    function logout(){
+
+    }
+</script>
