@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $_SESSION['loggedon'] = false;
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -12,5 +13,12 @@
     }
     else{
         echo "<script>console.log('Database connection established.');</script>";
+    }
+
+    if($_SESSION['username'] == null){
+        $accstatus = "";
+    }
+    else{
+        $accstatus = "hide";
     }
 ?>

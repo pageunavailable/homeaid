@@ -8,6 +8,7 @@
         if($result->num_rows != 0){
             $_SESSION['username'] = $username;
             echo "<script>console.log('Login success');</script>";
+            $_SESSION['loggedon'] = true;
             header("Location: pages/profile.php");
         }
         else{
@@ -23,6 +24,7 @@
         if($result->num_rows != 0){
             $_SESSION['username'] = $username;
             echo "<script>console.log('Login success');</script>";
+            $_SESSION['loggedon'] = true;
             header("Location: profile.php");
         }
         else{
