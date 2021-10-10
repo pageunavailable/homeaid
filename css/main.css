@@ -89,7 +89,7 @@ footer p{
 }
 .btn-tertiary{
     background-color: #ADB5BD !important;
-    color: white !important;
+    color: black !important;
 }
 .btn-tertiary:hover{
     background-color: #6C757D !important;
@@ -107,9 +107,10 @@ footer p{
     position: absolute;
     top: 10%;
 }
-.backimgpos{
-    
 
-   
-    
+.catbutton{
+    background-color: inherit;
+    border: none;
+    color: inherit;
 }
+

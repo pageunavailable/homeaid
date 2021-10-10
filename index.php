@@ -1,6 +1,7 @@
 <?php
     require("configuration/localhost.php");
     require("functions/login.php");
+    require("functions/srch.php");
 ?>
 
 <html>
@@ -30,7 +31,7 @@
                             <a class="nav-link active" href="pages/about.php">About</a>
                         </li>
                     </ul>
-                    <span class="navbar-text">
+                    <span class="navbar-text" id="accounts">
                         <div class="acc-reg">
                             <a href="pages/signup.php"><button name="signupBtn">Sign Up</button></a>
                             <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -68,11 +69,9 @@
         <div class="main-body">
             <div class="srch-bar">
                 <form method="GET">
-                    <input class="srch-txt" type="text" placeholder="Find people or categories">
-                    <input class="srch-btn" type="submit" value="Search">
-                    
+                    <input class="srch-txt" type="text" placeholder="Find people or categories" name="search-bar">
+                    <button class="srch-btn" type="submit" name="searchBtn">Search</button>
                 </form>
-                
             </div>
             <img id="background" class="backimgpos" src="images/index_background/background12.jpg"></a>
             <div id="popular-categories">
