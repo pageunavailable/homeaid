@@ -97,7 +97,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">${categories.category_name}</h5>
                                 <p class="card-text">${categories.description}</p>
-                                <a href="#" class="btn btn-tertiary">Go</a>
+                                <button class="catbutton" name="${categories.category_name}" type="button" onclick="category()">
+                                    <a class="btn btn-tertiary">Go</a>
+                                </button>
                             </div>
                             <div class="card-footer text-muted">
                                 Users Available: 
@@ -107,5 +109,11 @@
                 });
             }
         });
+    }
+
+    function category(){
+        var name = jq('.catbutton').attr("name");
+        var url = "search.php?cat=" + name;
+        window.location.href = url  ;
     }
 </script>

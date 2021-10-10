@@ -31,7 +31,7 @@
                             <a class="nav-link active" href="pages/about.php">About</a>
                         </li>
                     </ul>
-                    <span class="navbar-text">
+                    <span class="navbar-text" id="accounts">
                         <div class="acc-reg">
                             <a href="pages/signup.php"><button name="signupBtn">Sign Up</button></a>
                             <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">

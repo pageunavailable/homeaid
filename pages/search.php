@@ -69,8 +69,8 @@
         <div class="main-body">
             <div class="srch-bar-active">
                 <form method="GET">
-                    <input class="srch-txt" type="text" placeholder="Find people or categories" id="search-bar">
-                    <button class="srch-btn" type="submit" name="searchBtn">Search</button>
+                    <input class="srch-txt" type="text" placeholder="Find people or categories" id="search-bar" value="<?=$_GET['cat']?>">
+                    <button class="srch-btn" type="submit" name="subsearchBtn">Search</button>
                 </form>
             </div>
         </div>
