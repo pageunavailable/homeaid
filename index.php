@@ -65,15 +65,16 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="main-body">
+        <img id="background" class="backimgpos" src="images/index_background/background.jpg"></a>
             <div class="srch-bar">
                 <form method="GET">
                     <input class="srch-txt" type="text" placeholder="Find people or categories" name="search-bar">
                     <button class="srch-btn" type="submit" name="searchBtn">Search</button>
                 </form>
             </div>
-            <img id="background" class="backimgpos" src="images/index_background/background.jpg"></a>
+            
             <div id="popular-categories">
                 <p><strong>Popular Categories:
                     <button type="button" onclick="category('Carpentry')"><strong>Carpentry</strong></button>

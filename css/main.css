@@ -112,3 +112,8 @@ footer p{
     border: none;
     color: inherit;
 }
+.backimgpos{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
