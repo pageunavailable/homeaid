@@ -1,10 +1,12 @@
 <?php
     if(isset($_GET['searchBtn'])){
         $searchvalue = $_GET['search-bar'];
-        header("Location: pages/search.php");
+        $url = "search.php?cat=".$searchvalue;
+        header("Location: pages/$url");
     }
     if(isset($_GET['subsearchBtn'])){
         $searchvalue = $_GET['search-bar'];
-        header("Location: pages/search.php");
+        $url = "search.php?cat=".$searchvalue;
+        header("Location: $url");
     }
 ?>

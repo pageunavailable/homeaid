@@ -97,7 +97,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">${categories.category_name}</h5>
                                 <p class="card-text">${categories.description}</p>
-                                <button class="catbutton" name="${categories.category_name}" type="button" onclick="category()">
+                                <button class="catbutton" type="button" onclick="category('${categories.category_name}')">
                                     <a class="btn btn-tertiary">Go</a>
                                 </button>
                             </div>
@@ -111,9 +111,8 @@
         });
     }
 
-    function category(){
-        var name = jq('.catbutton').attr("name");
-        var url = "search.php?cat=" + name;
-        window.location.href = url  ;
+    function category(nm){
+        var url = "search.php?cat=" + nm;
+        window.location.href = url;
     }
 </script>
