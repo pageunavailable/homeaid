@@ -103,3 +103,7 @@ footer p{
     text-decoration: none;
     color: inherit;
 }
+.srch-bar-active{
+    position: absolute;
+    top: 10%;
+}

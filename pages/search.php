@@ -42,13 +42,6 @@
             </div>
         </nav>
 
-        <div class="srch-bar">
-            <form method="GET">
-                <input class="srch-txt" type="text" placeholder="Find people or categories">
-                <input class="srch-btn" type="submit" value="Search">
-            </form>
-        </div>
-
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -73,7 +66,12 @@
         </div>
 
         <div class="main-body">
-            
+            <div class="srch-bar-active">
+                <form method="GET">
+                    <input class="srch-txt" type="text" placeholder="Find people or categories">
+                    <input class="srch-btn" type="submit" value="Search">
+                </form>
+            </div>
         </div>
     </body>
 
