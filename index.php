@@ -73,7 +73,7 @@
                     <button class="srch-btn" type="submit" name="searchBtn">Search</button>
                 </form>
             </div>
-            <img id="background" class="backimgpos" src="images/index_background/background12.jpg"></a>
+            <img id="background" class="backimgpos" src="images/index_background/background.jpg"></a>
             <div id="popular-categories">
                 <p><strong>Popular Categories:
                     <button type="button"><strong>Carpentry</strong></button>
