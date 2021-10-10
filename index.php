@@ -70,9 +70,11 @@
                 <form method="GET">
                     <input class="srch-txt" type="text" placeholder="Find people or categories">
                     <input class="srch-btn" type="submit" value="Search">
+                    
                 </form>
+                
             </div>
-            
+            <img id="background" class="backimgpos" src="images/index_background/background12.jpg"></a>
             <div id="popular-categories">
                 <p><strong>Popular Categories:
                     <button type="button"><strong>Carpentry</strong></button>
