@@ -2,6 +2,7 @@
     require("configuration/localhost.php");
     require("functions/login.php");
     require("functions/srch.php");
+    $_SESSION['loggedon'] = "";
 ?>
 
 <html>
