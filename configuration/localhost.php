@@ -1,8 +1,9 @@
 <?php
+    session_start();
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "school";
+    $database = "homeaid";
 
     $conn = new mysqli($servername, $username, $password, $database);
 
@@ -11,5 +12,12 @@
     }
     else{
         echo "<script>console.log('Database connection established.');</script>";
+    }
+
+    if($_SESSION['username'] == null || $_SESSION['loggedon'] == null){
+        $accstatus = "";
+    }
+    else{
+        $accstatus = "hide";
     }
 ?>
