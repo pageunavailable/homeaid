@@ -66,7 +66,21 @@
         </div>
 
         <div class="main-body">
+            <div class="about-p">
+                <div class="a-homeaid">
+                    <h3>About HomeAid</h3>
+                    <p>
+                        HomeAid is our team's answer to the gaps between those who lost their job and those who are now afraid to go out or get home services due to the pandemic. HomeAid is an app that is made to let you hire or commission a "worker" to come into your home. However, as we employ the "safety first" mentality in these times, we took that into consideration and made it so that our registered "workers" are required to submit their vaccination cards and latest swab results which will be shown at their profile. We have created HomeAid to be a convenient and safe site/app to help people earn in just a few clicks.
+                    </p>
+                </div>
 
+                <div class="a-team">
+                    <h3>About the Team</h3>
+                    <p>
+                        The team is composed of three people: Kyle, Roland, and Steeven. They are all students in the Computer Science program of the Technological Institute of the Philippines.
+                    </p>
+                </div>
+            </div>
         </div>
     </body>
 

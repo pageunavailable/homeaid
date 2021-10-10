@@ -55,6 +55,6 @@
 
 <script>
     function logout(){
-
+        session_destroy();
     }
 </script>

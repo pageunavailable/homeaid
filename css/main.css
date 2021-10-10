@@ -119,3 +119,15 @@ footer p{
     height: 100%;
     position: absolute;
 }
+.about-p{
+    padding: 20px 20px 20px 20px;
+    top: 5%;
+    position: absolute;
+    color: lavender;
+}
+.about-p h3{
+    margin-bottom: 30px;
+}
+.a-homeaid{
+    margin-bottom: 5%;
+}
