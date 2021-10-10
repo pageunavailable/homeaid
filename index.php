@@ -76,9 +76,9 @@
             <img id="background" class="backimgpos" src="images/index_background/background.jpg"></a>
             <div id="popular-categories">
                 <p><strong>Popular Categories:
-                    <button type="button"><strong>Carpentry</strong></button>
-                    <button type="button"><strong>Housekeeping</strong></button>
-                    <button type="button"><strong>Plumbing</strong></button>
+                    <button type="button" onclick="category('Carpentry')"><strong>Carpentry</strong></button>
+                    <button type="button" onclick="category('Housekeeping')"><strong>Housekeeping</strong></button>
+                    <button type="button" onclick="category('Plumbing')"><strong>Plumbing</strong></button>
                 </strong></p>
             </div>
         </div>
@@ -88,3 +88,10 @@
         <p>© October 2021 - The Mischiefs</p>
     </footer>
 </html>
+
+<script>
+    function category(nm){
+        var url = "pages/search.php?cat=" + nm;
+        window.location.href = url;
+    }
+</script>
