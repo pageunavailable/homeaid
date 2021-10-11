@@ -7,6 +7,7 @@
     <head>
         <title>Profile | HomeAid</title>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/profile.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     </head>
@@ -45,17 +46,41 @@
         </nav>
 
         <div class="main-body">
-            
+            <div class="profile-modify center">
+                <form method="POST">
+                    <label>Name</label>
+                    <input type="text"> <br>
+                    <label>Profile Picture</label>
+                    <div class="mb-3 positioning">
+                        <input class="form-control form-control-sm" id="formFileSm" type="file" accept=".jpg, .png">
+                    </div>
+                    <label>Email Address</label>
+                    <input type="email"> <br>
+                    <label>Username</label>
+                    <input type="text"> <br>
+                    <label>Current Password</label>
+                    <input type="password" name="curr-password"> <br>
+                    <label>New Password</label>
+                    <input type="password" name="new-pass"> <br>
+                    <label>Confirm New Password</label>
+                    <input type="password" name="confirm-new-pass"> <br>
+                    <button type="submit" name="updateBtn">Update</button>
+                </form>
+            </div>
         </div>
     </body>
 
     <footer>
         <p>© October 2021 - The Mischiefs</p>
     </footer>
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>-->
 </html>
 
 <script>
+    var jq = $.noConflict();
+    
     function logout(){
         window.location.href = "../functions/logout.php";
     }
+
 </script>

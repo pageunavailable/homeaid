@@ -1,7 +1,6 @@
 <?php
     require("../configuration/localhost.php");
     require("../functions/login.php");
-    require("../configuration/local_config.php");
 ?>
 
 <html>

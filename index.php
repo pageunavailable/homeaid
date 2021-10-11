@@ -38,6 +38,7 @@
                                 Log In
                             </button>
                         </div>
+<<<<<<< HEAD
                         <div class="btn-group" style="display:<?=$displayacc?>">
                             <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../images/profile_pics/<?=$image?>"></image>
@@ -48,6 +49,8 @@
                                 <li><button class="dropdown-item" type="button" onclick="logout()">Logout</button></li>
                             </ul>
                         </div>
+=======
+>>>>>>> e036fc64df83f76bd594838fe66fed8fbf2dc98a
                     </span>
                 </div>
             </div>
