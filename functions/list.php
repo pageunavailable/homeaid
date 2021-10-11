@@ -1,6 +1,6 @@
 <?php
     header('Content-Type: application/json');
-    include("../configuration/localhost.php");
+    require("../configuration/local_config.php");
 
     $stmt = $connection->prepare("SELECT * FROM categories");
     $stmt->execute();

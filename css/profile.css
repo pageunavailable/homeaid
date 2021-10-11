@@ -1,0 +1,30 @@
+.profile-modify{
+    margin: 5% 7% 7% 7%;
+    padding: 0 5% 5% 5%;
+}
+.profile-modify label{
+    display: block;
+}
+.profile-modify button{
+    border: none;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-size: 20;
+    text-align: center;
+}
+.signup-form button:hover{
+    background-color: rgb(106, 233, 106);
+}
+.center{
+    text-align: center;
+}
+input{
+    width: 50%;
+}
+.mb-3 input{
+    width: 50% !important;
+}
+.positioning{
+    position: relative;
+    left: 25%;
+}
