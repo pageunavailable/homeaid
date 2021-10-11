@@ -14,7 +14,7 @@
         echo "<script>console.log('Database connection established.');</script>";
     }
 
-    if($_SESSION['username'] == null || $_SESSION['loggedon'] == null){
+    if(isset($_SESSION['username']) || isset($_SESSION['loggedon'])){
         $accstatus = "";
     }
     else{
