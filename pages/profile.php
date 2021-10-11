@@ -56,6 +56,6 @@
 
 <script>
     function logout(){
-        session_destroy();
+        window.location.href = "../functions/logout.php";
     }
 </script>
