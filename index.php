@@ -2,7 +2,6 @@
     require("configuration/localhost.php");
     require("functions/login.php");
     require("functions/srch.php");
-    $_SESSION['loggedon'] = "";
 ?>
 
 <html>
@@ -38,6 +37,16 @@
                             <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Log In
                             </button>
+                        </div>
+                        <div class="btn-group <?=$displayacc?>">
+                            <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../images/profile_pics/<?=$image?>"></image>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button"><a href="profile.php">Profile</a></button></li>
+                                <li><button class="dropdown-item" type="button">Settings</button></li>
+                                <li><button class="dropdown-item" type="button" onclick="logout()">Logout</button></li>
+                            </ul>
                         </div>
                     </span>
                 </div>

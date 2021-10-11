@@ -45,22 +45,22 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In to your HomeAid Account</h5>
-                </div>
-                <div class="modal-body">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign In to your HomeAid Account</h5>
+                    </div>
                     <form method="POST">
-                        <label>Username</label>
-                        <input type="text" name="username" autocomplete="username" placeholder="Username">
-                        <br>
-                        <label>Password</label>
-                        <input type="password" name="password" autocomplete="current-password" placeholder="Password">
+                        <div class="modal-body">
+                            <label>Username</label>
+                            <input type="text" name="username" autocomplete="username" placeholder="Username">
+                            <br>
+                            <label>Password</label>
+                            <input type="password" name="password" autocomplete="current-password" placeholder="Password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" name="subloginBtn">Login</button>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" name="subloginBtn">Login</button>
-                </div>
                 </div>
             </div>
         </div>

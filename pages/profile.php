@@ -1,5 +1,6 @@
 <?php
     require("../configuration/localhost.php");
+    require("../functions/profileimg.php");
 ?>
 
 <html>
@@ -31,7 +32,7 @@
                     </ul>
                     <div class="btn-group">
                         <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="<?=$image?>"></image>
+                            <img src="../images/profile_pics/<?=$image?>"></image>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><button class="dropdown-item" type="button"><a href="profile.php">Profile</a></button></li>
@@ -55,6 +56,6 @@
 
 <script>
     function logout(){
-        session_destroy();
+        window.location.href = "../functions/logout.php";
     }
 </script>

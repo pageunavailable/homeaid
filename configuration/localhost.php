@@ -14,10 +14,12 @@
         echo "<script>console.log('Database connection established.');</script>";
     }
 
-    if($_SESSION['username'] == null || $_SESSION['loggedon'] == null){
+    if(isset($_SESSION['username'])){
         $accstatus = "";
+        $displayacc= "hide";
     }
     else{
         $accstatus = "hide";
+        $displayacc = "";
     }
 ?>
