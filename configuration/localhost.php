@@ -15,11 +15,13 @@
     }
 
     if(isset($_SESSION['username'])){
-        $accstatus = "";
-        $displayacc= "hide";
+        echo "<script>console.log('" . $_SESSION['username'] . "');</script>";
+        $accstatus = "none";
+        $displayacc= "block";
     }
     else{
-        $accstatus = "hide";
-        $displayacc = "";
+        $accstatus = "block";
+        $displayacc = "none";
     }
+
 ?>

@@ -32,13 +32,13 @@
                         </li>
                     </ul>
                     <span class="navbar-text">
-                        <div class="acc-reg <?=$accstatus?>">
+                        <div class="acc-reg" style="display:<?=$accstatus?>">
                             <a href="pages/signup.php"><button name="signupBtn">Sign Up</button></a>
                             <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Log In
                             </button>
                         </div>
-                        <div class="btn-group <?=$displayacc?>">
+                        <div class="btn-group" style="display:<?=$displayacc?>">
                             <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../images/profile_pics/<?=$image?>"></image>
                             </button>
@@ -104,5 +104,8 @@
     function category(nm){
         var url = "pages/search.php?cat=" + nm;
         window.location.href = url;
+    }
+    function logout(){
+        window.location.href = "functions/logout.php";
     }
 </script>
