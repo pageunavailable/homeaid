@@ -24,7 +24,7 @@
                             <a class="nav-link active" href="../index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="hmd_ctg.php">hmd_ctg</a>
+                            <a class="nav-link active" href="categories.php">Categories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="about.php">About</a>
