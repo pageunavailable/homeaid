@@ -5,7 +5,7 @@
 
 <html>
     <head>
-        <title>Categories | HomeAid</title>
+        <title>hmd_ctg | HomeAid</title>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
                             <a class="nav-link active" href="../index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="categories.php">Categories</a>
+                            <a class="nav-link active" href="hmd_ctg.php">hmd_ctg</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="about.php">About</a>
@@ -84,19 +84,19 @@
     function Load(){
         jq('#card-body').empty();
         jq.ajax({
-            url: "http://localhost/myapp/json_tester/functions/list.php",
+            url: "http://localhost/myapp/homeaid/functions/list.php",
             type: "GET",
             success: function(response){
-                response.forEach(function(categories, index){
+                response.forEach(function(hmd_ctg, index){
                     jq('#card-body').append(`
                         <div class="card center" style="width: 18rem;">
                             <div class="cardimage">
-                                <img src='${categories.image}' class="card-img-top">
+                                <img src='../images/category_images/${hmd_ctg.ctg_cd}.jpg' class="card-img-top">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">${categories.category_name}</h5>
-                                <p class="card-text">${categories.description}</p>
-                                <button class="catbutton" type="button" onclick="category('${categories.category_name}')">
+                                <h5 class="card-title">${hmd_ctg.ctg_tl}</h5>
+                                <p class="card-text">${hmd_ctg.ctg_desc}</p>
+                                <button class="catbutton" type="button" onclick="category('${hmd_ctg.ctg_tl}')">
                                     <a class="btn btn-tertiary">Go</a>
                                 </button>
                             </div>

@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "homeaid";
+    $database = "hmd_db";
 
     $connection = new PDO("mysql:host={$servername};dbname={$database};charset=utf8", $username, $password);
     $connection->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
