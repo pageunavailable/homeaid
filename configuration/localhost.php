@@ -1,9 +1,12 @@
 <?php
+    //error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
+    //mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    //ini_set('display_errors', 0);
     session_start();
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "homeaid";
+    $database = "hmd_db";
 
     $conn = new mysqli($servername, $username, $password, $database);
 

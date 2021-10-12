@@ -1,7 +1,11 @@
 <?php
+    error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    ini_set('display_errors', 0);
     require("configuration/localhost.php");
     require("functions/login.php");
     require("functions/srch.php");
+    
 ?>
 
 <html>

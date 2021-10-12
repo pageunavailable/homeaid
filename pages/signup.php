@@ -7,12 +7,12 @@
         $username = $_POST['username'];
         $email = $_POST['email'];
         $pass = $_POST['password'];
-        $sql = "SELECT * FROM `users` WHERE `email` = '$email';";
+        $sql = "SELECT * FROM `hmd_acc` WHERE `acc_eml` = '$email';";
         $result = $conn->query($sql);
         if($result->num_rows > 0){
             echo "<script>alert('This email is already in use.');</script>";
         }
-        $sql = "SELECT * FROM `users` WHERE `username` = '$username'";
+        $sql = "SELECT * FROM `hmd_acc` WHERE `acc_usr` = '$username'";
         $result = $conn->query($sql);
         if($result->num_rows > 0){
             echo "<script>alert('This username is already in use. Please use a different username.');</script>";
@@ -23,8 +23,9 @@
         else{
             echo "<script>alert('Please double check your password.')</script>";
         }
-        $sql = "INSERT INTO `users`(`name`, `email`, `username`, `password`) VALUES 
-        ('$name', '$email', '$username', '$password');";
+        $sql = "INSERT INTO `hmd_acc`(`acc_eml`, `acc_usr`, `acc_pwd`) VALUES ('$email', '$username', '$password');";
+        $result = $conn->query($sql);
+        $sql = "INSERT INTO `hmd_pfl`(`pfl_nm`) VALUES ('$name');";
         $result = $conn->query($sql);
         $_SESSION['username'] = $username;
         header("Location: profile.php");

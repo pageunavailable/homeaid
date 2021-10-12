@@ -33,7 +33,7 @@
                     </ul>
                     <div class="btn-group">
                         <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../images/profile_pics/<?=$image?>"></image>
+                            <img src="../images/profile_pics/<?=$image?>.jpg"></image>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><button class="dropdown-item" type="button"><a href="profile.php">Profile</a></button></li>
@@ -77,10 +77,7 @@
 </html>
 
 <script>
-    var jq = $.noConflict();
-    
     function logout(){
         window.location.href = "../functions/logout.php";
     }
-
 </script>

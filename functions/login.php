@@ -3,7 +3,7 @@
         $username = $_POST['username'];
         $pass = $_POST['password'];
         $password = hash("sha256", $pass);
-        $sql = "SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password';";
+        $sql = "SELECT * FROM `hmd_acc` WHERE `acc_usr` = '$username' AND `acc_pwd` = '$password';";
         $result = $conn->query($sql);
         if($result->num_rows != 0){
             $_SESSION['username'] = $username;
@@ -18,7 +18,7 @@
         $username = $_POST['username'];
         $pass = $_POST['password'];
         $password = hash("sha256", $pass);
-        $sql = "SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password';";
+        $sql = "SELECT * FROM `hmd_acc` WHERE `acc_usr` = '$username' AND `acc_pwd` = '$password';";
         $result = $conn->query($sql);
         if($result->num_rows != 0){
             $_SESSION['username'] = $username;

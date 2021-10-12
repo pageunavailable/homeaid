@@ -5,8 +5,9 @@
 
 <html>
     <head>
-        <title>hmd_ctg | HomeAid</title>
+        <title>Categories | HomeAid</title>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/categories.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     </head>
@@ -66,7 +67,7 @@
         </div>
 
         <div class="main-body">
-            <div class="card-group" id="card-body">
+            <div class="row row-cols-3 row-cols-md-4 g-3 relative" id="card-body">
                 
             </div>
         </div>
@@ -89,19 +90,21 @@
             success: function(response){
                 response.forEach(function(hmd_ctg, index){
                     jq('#card-body').append(`
-                        <div class="card center" style="width: 18rem;">
-                            <div class="cardimage">
-                                <img src='../images/category_images/${hmd_ctg.ctg_cd}.jpg' class="card-img-top">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">${hmd_ctg.ctg_tl}</h5>
-                                <p class="card-text">${hmd_ctg.ctg_desc}</p>
-                                <button class="catbutton" type="button" onclick="category('${hmd_ctg.ctg_tl}')">
-                                    <a class="btn btn-tertiary">Go</a>
-                                </button>
-                            </div>
-                            <div class="card-footer text-muted">
-                                Users Available: 
+                        <div class="col">
+                            <div class="card text-center" style="width: 15rem;">
+                                <div class="cardimage">
+                                    <img src='../images/category_images/${hmd_ctg.ctg_cd}.jpg' class="card-img-top">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">${hmd_ctg.ctg_tl}</h5>
+                                    <p class="card-text">${hmd_ctg.ctg_desc}</p>
+                                    <button class="catbutton" type="button" onclick="category('${hmd_ctg.ctg_tl}')">
+                                        <a class="btn btn-tertiary">Go</a>
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Users Available: 
+                                </div>
                             </div>
                         </div>
                     `);

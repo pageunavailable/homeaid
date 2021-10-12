@@ -134,3 +134,6 @@ footer p{
 .hide{
     display: none;
 }
+.card{
+    margin: 20px 20px 20px 20px !important;
+}
